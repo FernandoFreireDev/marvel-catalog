@@ -1,34 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## About
 
-## Getting Started
+This was a project used to study Next.js.
 
-First, run the development server:
+In it I created a catalog of marvel heroes.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+The goal was to create a catalog with information that doesn't change often.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Next.js was perfect for this job, because with it I was able to set a time of 20 seconds to revalidate the static information, but it could be 2 hours, 2 days, etc...
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Runing
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+`yarn api` to raise our api
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+`yarn build` to build the project
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`yarn start` to run the project emulating a production environment

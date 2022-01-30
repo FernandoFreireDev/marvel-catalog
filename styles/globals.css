@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  background-color: #333333;
+  color: #ffffff;
+  height: 100%;
 }
 
 a {
@@ -13,4 +15,103 @@ a {
 
 * {
   box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hm-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hm-container .hm-content {
+  text-align: center;
+}
+
+.hm-container .hm-content .hm-logo {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.hm-container .hm-content h1 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.hm-container .hm-content a {
+  color: #ec1e24;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.ctlg-container {
+  height: 100vh;
+  width: 100%;
+  display: block;
+}
+
+.ctlg-container .ctlg-header {
+  text-align: center;
+  margin: 36px 0;
+}
+
+.ctlg-container .ctlg-header h1 {
+  font-size: 24px;
+}
+
+.ctlg-container .ctlg-session {
+  margin-bottom: 36px;
+}
+
+.ctlg-container .ctlg-session .ctlg-session-title {
+  margin-bottom: 16px;
+  margin-left: 8px;
+}
+
+.ctlg-container .ctlg-session .ctlg-carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 60px;
+  overflow-x: scroll;
+}
+
+.ctlg-container .ctlg-session .ctlg-carousel-item:first-of-type {
+  margin-left: 16px;
+}
+
+.ctlg-container .ctlg-session .ctlg-carousel-item {
+  width: 350px;
+  height: 350px;
+  position: relative;
+}
+
+.ctlg-container .ctlg-session .ctlg-carousel-item img {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  z-index: 0;
+}
+
+.ctlg-container .ctlg-session .ctlg-carousel-item-info {
+  z-index: 2;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  width: 100%;
+  padding: 8px 16px;
+}
+
+.ctlg-container .ctlg-session .ctlg-carousel-item-info h2 {
+  margin-bottom: 16px;
+}
+
+.ctlg-container .ctlg-session .ctlg-carousel-item-info a {
+  color: #ec1e24;
+  font-weight: bold;
+  font-size: 20px;
 }
